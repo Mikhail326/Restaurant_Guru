@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Guru</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">
+          <img src="img/logo.svg" alt="Restaurant_Guru">
+          <img src="img/logo-mobile.svg" alt="Restaurant_Guru">
+        </a>
+        <div class="header__right">
+          <form class="form" action="#">
+            <div class="form__item">
+              <span>Найти:</span>
+              <input type="text" placeholder="Рестораны">
+            </div>
+            <div class="form__item">
+              <span>Где:</span>
+              <input type="text" placeholder="Москва">
+            </div>
+            <button class="form__btn" type="submit">
+              <img src="img/image.svg" alt="Restaurant_Guru">
+            </button>
+          </form>
+          <div id="langs" class="header__langs">
+            <div class="header__langs-selected">
+              <img id="flag" src="img/lang-ru.svg" alt="Restaurant_Guru">
+            </div>
+            <div id="langs-list" class="langs__inner">
+              <span id="langs-close" class="langs__btn">
+                <img src="img/close.svg" alt="Restaurant_Guru">
+              </span>
+              <ul class="langs__list">
+                <li data-lang="ru" class="langs__item select">
+                  <a class="langs__link" href="#">
+                    <img src="img/lang-ru.svg" alt="Restaurant_Guru">
+                    <span>Russia</span>
+                  </a>
+                </li>
+                <li data-lang="en" class="langs__item">
+                  <a class="langs__link" href="#">
+                    <img src="img/lang-en.svg" alt="Restaurant_Guru">
+                    <span>English</span>
+                  </a>
+                </li>
+                <li data-lang="es" class="langs__item">
+                  <a class="langs__link" href="#">
+                    <img src="img/lang-es.svg" alt="Restaurant_Guru">
+                    <span>Espanol</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__inner">
+          <a href="#">Главная</a>
+          <a href="#">Россия</a>
+          <a href="#">Москва</a>
+          <a href="#">Рестораны</a>
+        </div>
+      </div>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="title">
+          <h2>Рестораны москвы</h2>
+          <a href="#">Все рестораны</a>
+        </div>
+        <div class="slider__inner">
+          <div class="slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="slider__item swiper-slide">
+                <div class="item__image">
+                  <img src="img/item.png" alt="Restaurant_Guru">
+                  <div class="item__image-text">
+                    <span>Открыто до</span>
+                    <span>00:00</span>
+                  </div>
+                </div>
+                <div class="item__body">
+                  <div class="item__body-title">
+                    <h4>Апшерон</h4>
+                    <div class="title__rating">
+                      <img src="img/star.svg" alt="Restaurant_Guru">
+                      <span>4.2</span>
+                      <span>(842)</span>
+                    </div>
+                  </div>
+                  <div class="item__body-inner">
+                    <div class="item__body-left">
+                      <span>#4 ресторан в г. Подольск</span>
+                      <div class="item__kitchen">
+                        <img src="img/kitchen.svg" alt="Restaurant_Guru">
+                        <span>Европейская, Итальянска</span>
+                      </div>
+                      <div class="item__price">
+                        <div class="price">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                        </div>
+                        <div class="receipt">
+                          <img src="img/receipt.svg" alt="Restaurant_Guru">
+                          <span>Средний чек:</span>
+                          <span>1200₽</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item__body-right">
+                      <div class="time">
+                        <img src="img/car.svg" alt="Restaurant_Guru">
+                        <span>12 мин</span>
+                      </div>
+                      <div>6,2 км</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item swiper-slide">
+                <div class="item__image">
+                  <img src="img/item.png" alt="Restaurant_Guru">
+                  <div class="item__image-text">
+                    <span>Открыто до</span>
+                    <span>00:00</span>
+                  </div>
+                </div>
+                <div class="item__body">
+                  <div class="item__body-title">
+                    <h4>Апшерон</h4>
+                    <div class="title__rating">
+                      <img src="img/star.svg" alt="Restaurant_Guru">
+                      <span>4.2</span>
+                      <span>(842)</span>
+                    </div>
+                  </div>
+                  <div class="item__body-inner">
+                    <div class="item__body-left">
+                      <span>#4 ресторан в г. Подольск</span>
+                      <div class="item__kitchen">
+                        <img src="img/kitchen.svg" alt="Restaurant_Guru">
+                        <span>Европейская, Итальянска</span>
+                      </div>
+                      <div class="item__price">
+                        <div class="price">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                        </div>
+                        <div class="receipt">
+                          <img src="img/receipt.svg" alt="Restaurant_Guru">
+                          <span>Средний чек:</span>
+                          <span>1200₽</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item__body-right">
+                      <div class="time">
+                        <img src="img/car.svg" alt="Restaurant_Guru">
+                        <span>12 мин</span>
+                      </div>
+                      <div>6,2 км</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item swiper-slide">
+                <div class="item__image">
+                  <img src="img/item.png" alt="Restaurant_Guru">
+                  <div class="item__image-text">
+                    <span>Открыто до</span>
+                    <span>00:00</span>
+                  </div>
+                </div>
+                <div class="item__body">
+                  <div class="item__body-title">
+                    <h4>Апшерон</h4>
+                    <div class="title__rating">
+                      <img src="img/star.svg" alt="Restaurant_Guru">
+                      <span>4.2</span>
+                      <span>(842)</span>
+                    </div>
+                  </div>
+                  <div class="item__body-inner">
+                    <div class="item__body-left">
+                      <span>#4 ресторан в г. Подольск</span>
+                      <div class="item__kitchen">
+                        <img src="img/kitchen.svg" alt="Restaurant_Guru">
+                        <span>Европейская, Итальянска</span>
+                      </div>
+                      <div class="item__price">
+                        <div class="price">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                        </div>
+                        <div class="receipt">
+                          <img src="img/receipt.svg" alt="Restaurant_Guru">
+                          <span>Средний чек:</span>
+                          <span>1200₽</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item__body-right">
+                      <div class="time">
+                        <img src="img/car.svg" alt="Restaurant_Guru">
+                        <span>12 мин</span>
+                      </div>
+                      <div>6,2 км</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item swiper-slide">
+                <div class="item__image">
+                  <img src="img/item.png" alt="Restaurant_Guru">
+                  <div class="item__image-text">
+                    <span>Открыто до</span>
+                    <span>00:00</span>
+                  </div>
+                </div>
+                <div class="item__body">
+                  <div class="item__body-title">
+                    <h4>Апшерон</h4>
+                    <div class="title__rating">
+                      <img src="img/star.svg" alt="Restaurant_Guru">
+                      <span>4.2</span>
+                      <span>(842)</span>
+                    </div>
+                  </div>
+                  <div class="item__body-inner">
+                    <div class="item__body-left">
+                      <span>#4 ресторан в г. Подольск</span>
+                      <div class="item__kitchen">
+                        <img src="img/kitchen.svg" alt="Restaurant_Guru">
+                        <span>Европейская, Итальянска</span>
+                      </div>
+                      <div class="item__price">
+                        <div class="price">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                        </div>
+                        <div class="receipt">
+                          <img src="img/receipt.svg" alt="Restaurant_Guru">
+                          <span>Средний чек:</span>
+                          <span>1200₽</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item__body-right">
+                      <div class="time">
+                        <img src="img/car.svg" alt="Restaurant_Guru">
+                        <span>12 мин</span>
+                      </div>
+                      <div>6,2 км</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item swiper-slide">
+                <div class="item__image">
+                  <img src="img/item.png" alt="Restaurant_Guru">
+                  <div class="item__image-text">
+                    <span>Открыто до</span>
+                    <span>00:00</span>
+                  </div>
+                </div>
+                <div class="item__body">
+                  <div class="item__body-title">
+                    <h4>Апшерон</h4>
+                    <div class="title__rating">
+                      <img src="img/star.svg" alt="Restaurant_Guru">
+                      <span>4.2</span>
+                      <span>(842)</span>
+                    </div>
+                  </div>
+                  <div class="item__body-inner">
+                    <div class="item__body-left">
+                      <span>#4 ресторан в г. Подольск</span>
+                      <div class="item__kitchen">
+                        <img src="img/kitchen.svg" alt="Restaurant_Guru">
+                        <span>Европейская, Итальянска</span>
+                      </div>
+                      <div class="item__price">
+                        <div class="price">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                        </div>
+                        <div class="receipt">
+                          <img src="img/receipt.svg" alt="Restaurant_Guru">
+                          <span>Средний чек:</span>
+                          <span>1200₽</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item__body-right">
+                      <div class="time">
+                        <img src="img/car.svg" alt="Restaurant_Guru">
+                        <span>12 мин</span>
+                      </div>
+                      <div>6,2 км</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item swiper-slide">
+                <div class="item__image">
+                  <img src="img/item.png" alt="Restaurant_Guru">
+                  <div class="item__image-text">
+                    <span>Открыто до</span>
+                    <span>00:00</span>
+                  </div>
+                </div>
+                <div class="item__body">
+                  <div class="item__body-title">
+                    <h4>Апшерон</h4>
+                    <div class="title__rating">
+                      <img src="img/star.svg" alt="Restaurant_Guru">
+                      <span>4.2</span>
+                      <span>(842)</span>
+                    </div>
+                  </div>
+                  <div class="item__body-inner">
+                    <div class="item__body-left">
+                      <span>#4 ресторан в г. Подольск</span>
+                      <div class="item__kitchen">
+                        <img src="img/kitchen.svg" alt="Restaurant_Guru">
+                        <span>Европейская, Итальянска</span>
+                      </div>
+                      <div class="item__price">
+                        <div class="price">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                        </div>
+                        <div class="receipt">
+                          <img src="img/receipt.svg" alt="Restaurant_Guru">
+                          <span>Средний чек:</span>
+                          <span>1200₽</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item__body-right">
+                      <div class="time">
+                        <img src="img/car.svg" alt="Restaurant_Guru">
+                        <span>12 мин</span>
+                      </div>
+                      <div>6,2 км</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item swiper-slide">
+                <div class="item__image">
+                  <img src="img/item.png" alt="Restaurant_Guru">
+                  <div class="item__image-text">
+                    <span>Открыто до</span>
+                    <span>00:00</span>
+                  </div>
+                </div>
+                <div class="item__body">
+                  <div class="item__body-title">
+                    <h4>Апшерон</h4>
+                    <div class="title__rating">
+                      <img src="img/star.svg" alt="Restaurant_Guru">
+                      <span>4.2</span>
+                      <span>(842)</span>
+                    </div>
+                  </div>
+                  <div class="item__body-inner">
+                    <div class="item__body-left">
+                      <span>#4 ресторан в г. Подольск</span>
+                      <div class="item__kitchen">
+                        <img src="img/kitchen.svg" alt="Restaurant_Guru">
+                        <span>Европейская, Итальянска</span>
+                      </div>
+                      <div class="item__price">
+                        <div class="price">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                        </div>
+                        <div class="receipt">
+                          <img src="img/receipt.svg" alt="Restaurant_Guru">
+                          <span>Средний чек:</span>
+                          <span>1200₽</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item__body-right">
+                      <div class="time">
+                        <img src="img/car.svg" alt="Restaurant_Guru">
+                        <span>12 мин</span>
+                      </div>
+                      <div>6,2 км</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item swiper-slide">
+                <div class="item__image">
+                  <img src="img/item.png" alt="Restaurant_Guru">
+                  <div class="item__image-text">
+                    <span>Открыто до</span>
+                    <span>00:00</span>
+                  </div>
+                </div>
+                <div class="item__body">
+                  <div class="item__body-title">
+                    <h4>Апшерон</h4>
+                    <div class="title__rating">
+                      <img src="img/star.svg" alt="Restaurant_Guru">
+                      <span>4.2</span>
+                      <span>(842)</span>
+                    </div>
+                  </div>
+                  <div class="item__body-inner">
+                    <div class="item__body-left">
+                      <span>#4 ресторан в г. Подольск</span>
+                      <div class="item__kitchen">
+                        <img src="img/kitchen.svg" alt="Restaurant_Guru">
+                        <span>Европейская, Итальянска</span>
+                      </div>
+                      <div class="item__price">
+                        <div class="price">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-dark.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                          <img src="img/r-light.svg" alt="Restaurant_Guru">
+                        </div>
+                        <div class="receipt">
+                          <img src="img/receipt.svg" alt="Restaurant_Guru">
+                          <span>Средний чек:</span>
+                          <span>1200₽</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item__body-right">
+                      <div class="time">
+                        <img src="img/car.svg" alt="Restaurant_Guru">
+                        <span>12 мин</span>
+                      </div>
+                      <div>6,2 км</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
